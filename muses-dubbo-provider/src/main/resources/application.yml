@@ -1,0 +1,20 @@
+# Spring boot application
+spring:
+  application:
+    name: dubbo-provider
+
+
+# Dubbo Application
+## The default value of dubbo.application.name is ${spring.application.name}
+## dubbo.application.name=${spring.application.name}
+dubbo:
+  ## Dubbo Registry
+  registry:
+    address: N/A
+  # Dubbo Protocol
+  protocol:
+    name: dubbo
+    port: 12345
+  # Base packages to scan Dubbo Component: @org.apache.dubbo.config.annotation.Service
+  scan:
+    base-packages: cn.muses.dubbo.provider.service
